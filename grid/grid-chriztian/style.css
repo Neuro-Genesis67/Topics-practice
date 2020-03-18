@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { height: 100vh; border: 100px solid lightgrey; }
+
+.grid {
+    --cols: 5;   
+
+    display: grid;  
+    grid-template-columns: repeat(var(--cols), minmax(100px, 300px));
+    grid-auto-rows: minmax(100px, 300px);
+}
+
+
+.box:nth-child(odd) {
+    background: black;
+}

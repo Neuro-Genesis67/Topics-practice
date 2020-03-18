@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		html,body {padding: 0; margin: 0; }
+		* { box-sizing: border-box; }
+		
+		main {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		
+		.box {
+			flex: 0 1 25%;
+			min-height: 100px;
+		}
+		
+		.box { background: lime; }
+		.box:nth-child(even) { background: fuchsia; }
+		.box:nth-child(3n) { background: maroon; }
+	
+		@supports(display: grid) {
+			main {
+				--items: 2;
+				--pad: 20px;
+			
+				margin: 0 calc(var(--pad) / 2);
+			
+				display: grid;
+				grid-template-columns: repeat(var(--items), calc((100vw - var(--pad)) / var(--items)));
+				grid-auto-rows: calc((100vw - var(--pad)) / var(--items));
+				align-items: stretch;
+			}
+			
+			.box {
+				
+			}
+		
+			@media (min-width: 600px) {
+				main {
+					--items: 3;
+					--pad: 40px;
+	/*				grid-template-columns: repeat(3, calc((100vw - 40px) / 3));
+					grid-auto-rows: calc((100vw - 40px) / 3);
+	*/			}
+			}
+		
+			@media (min-width: 900px) {
+				main {
+					--items: 4;
+	/*				grid-template-columns: repeat(4, 25vw);
+					grid-auto-rows: 25vw;
+	*/			}
+			}
+		
+			@media (min-width: 1400px) {
+				main {
+					max-width: 1400px;
+					margin: auto;
+					grid-template-columns: repeat(4, 350px);
+					grid-auto-rows: 350px;
+				}
+			
+			}
+		}
+		
+		
+	</style>
+</head>
+<body>
+
+<main>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+</main>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+
+.presentation {
+	max-width: 1600px;
+	/* height: 800px; */
+	background-color: hotpink;
+	margin-right: auto;
+	margin-left: auto;
+
+	display: flex;
+	flex-direction: column;
+
+
+
+}
+
+.media {
+	/* object-fit: cover;  */
+	/* box-sizing: border-box;
+	display: block; */
+	background-color: purple;
+	/* align-self: flex-end; */
+	/* width: 200px; */
+	/* height: 100%;
+	width: 100%; */
+	/* z-index: 2; */
+}
+
+.text {
+	background-color: grey;
+	/* z-index: 1; */
+	/* height: 50%; */
+}
+img {
+	/* object-fit: cover;  */
+	max-width: 100%;
+	height: auto;
+}

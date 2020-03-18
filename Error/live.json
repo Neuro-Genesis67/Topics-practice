@@ -1,0 +1,58 @@
+{
+	"DefaultTemplate": "umb://template/0c750f06111840f0b51cbf78e0f724fe",
+	"AllowedTemplates": [
+		"umb://template/0c750f06111840f0b51cbf78e0f724fe"
+	],
+	"Icon": "icon-autofill color-purple",
+	"Thumbnail": "folder.png",
+	"Description": null,
+	"IsContainer": false,
+	"Permissions": {
+		"AllowVaryingByCulture": false,
+		"AllowVaryingBySegment": false,
+		"AllowedAtRoot": false,
+		"IsElementType": false,
+		"AllowedChildContentTypes": []
+	},
+	"Parent": null,
+	"CompositionContentTypes": [],
+	"PropertyGroups": [
+		{
+			"Key": "ad44f701-6928-4438-a17f-68f745496a92",
+			"Name": "Content",
+			"SortOrder": 0,
+			"PropertyTypes": [
+				{
+					"Key": "1bd86c12-4082-4af9-81f6-1f4309d82ab9",
+					"Alias": "signupForm",
+					"DataType": "umb://data-type/7224e47069e34003bc4c5396910b3846",
+					"Description": null,
+					"Mandatory": false,
+					"Name": "Signup form",
+					"SortOrder": 0,
+					"Validation": null,
+					"VariesByCulture": false,
+					"VariesBySegment": false
+				}
+			]
+		}
+	],
+	"PropertyTypes": [],
+	"Udi": "umb://document-type/4f72f65c0a6849b891931bad38a6d3d9",
+	"Dependencies": [
+		{
+			"Udi": "umb://data-type/7224e47069e34003bc4c5396910b3846",
+			"Ordering": true,
+			"Mode": 0
+		},
+		{
+			"Udi": "umb://template/0c750f06111840f0b51cbf78e0f724fe",
+			"Ordering": true,
+			"Mode": 0
+		}
+	],
+	"Name": "Signup Page",
+	"Alias": "SignupPage",
+	"__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+	"__version": "3.4.0"
+}

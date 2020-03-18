@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+
+}
+
+body {
+    box-sizing: border-box;
+    border: 200px solid red;
+}
+
+p {
+    height: 200px;
+    width: 1000px;
+    border: 2px solid seagreen;
+    font-size: 5em;
+}
+
+button {
+    height: 200px;
+    width: 1000px;
+}
+
+#phoneNumber {
+    height: 200px;
+    width: 1000px;
+    font-size: 5em;
+}

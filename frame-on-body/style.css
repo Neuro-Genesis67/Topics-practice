@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+html, body { padding: 0; margin: 0; }
+
+body { 
+    height: 100vh; 
+    width: 100vw; 
+    max-width: 100%;
+    border: 100px solid red; 
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+}
+
+.square {
+    height: 100px;
+    background: blueviolet;
+}
+
+.square:nth-child(even) {
+    background-color: burlywood;
+}
+

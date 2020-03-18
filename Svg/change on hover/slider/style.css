@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+html, body { padding: 0; margin: 0; }
+
+body { 
+    height: 100vh; 
+    width: 100vw; 
+    max-width: 100%;
+    border: 100px solid red; 
+}
+
+.container {
+	width: 400px;
+	height: 700px;
+	border: 2px solid black;
+	background: url("../assets/icon-slide-next.svg") no-repeat;
+}
+
+.container:hover {
+	width: 540px;
+	background: url("../assets/icon-slide-next-wide.svg") no-repeat;
+}
+
